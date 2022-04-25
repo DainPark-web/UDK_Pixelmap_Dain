@@ -1,8 +1,8 @@
-const mainContainer = document.querySelector(".testclass")
+const mainContainer = document.querySelector(".p5container")
 
 
-let WIDTH = window.innerWidth;
-let HEIGHT = window.innerHeight;
+let WIDTH = mainContainer.clientWidth;
+let HEIGHT = mainContainer.clientHeight;
 
 function setup (){
     let canvas = createCanvas(WIDTH, HEIGHT);
