@@ -1,4 +1,11 @@
 
+.p5container {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: aquamarine;
+    position: relative;
+    overflow: hidden;
+}
 
 canvas{
     width: 100%;

@@ -16,7 +16,7 @@ function draw(){
 }
 
 function windowResized(){
-    WIDTH = window.innerWidth;
-    HEIGHT = window.innerHeight;
+    WIDTH = mainContainer.clientWidth;
+    HEIGHT = mainContainer.clientHeight;
     resizeCanvas(WIDTH, HEIGHT);
 }
