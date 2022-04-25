@@ -1,4 +1,7 @@
 
 #test {
-    color: var(--bg-color)
+    width: 100vw;
+    min-height: 100vh;
+    background-color: aquamarine;
+    position: relative;
 }
