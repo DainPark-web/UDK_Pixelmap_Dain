@@ -1,7 +1,7 @@
 export const pathListData = [
     {
         title: "Experiment01",
-        path : "/pages/test.html"
+        path : "/pages/experiment01.html"
     },
     {
         title: "Experiment02",
