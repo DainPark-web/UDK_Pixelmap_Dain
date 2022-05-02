@@ -33,7 +33,9 @@ function setup (){
     tintSliderB.position(30, HEIGHT-150);
     tintSliderB.style("width", "200px")
     // rectMode(CENTER);
-    
+
+    textSize(15);
+    textAlign(CENTER, CENTER);
 }
 
 function draw(){
@@ -42,6 +44,10 @@ function draw(){
     let tintVR = tintSliderR.value();
     let tintVG = tintSliderG.value();
     let tintVB = tintSliderB.value();
+    fill(255)
+    text("R", 30 + 230, HEIGHT-50 + 8)
+    text("G", 30 + 230, HEIGHT-100 + 8)
+    text("B", 30 + 230, HEIGHT-150 + 8)
     tint(tintVR, tintVG,tintVB);
     image(img,WIDTH/2 - (imgWdith/2), HEIGHT/2 - (imgHeight/2), imgWdith, imgHeight)
    
