@@ -1,3 +1,5 @@
+// Tint
+
 const mainContainer = document.querySelector(".p5container")
 
 let WIDTH = mainContainer.clientWidth;
@@ -5,22 +7,45 @@ let HEIGHT = mainContainer.clientHeight;
 
 
 let img;
+const imgWdith = 700;
+const imgHeight = 1000;
+
+let tintSliderR;
+let tintSliderG;
+let tintSliderB;
+
 function preload() {
-    img = loadImage("../client/js/p5js/assets/dain.jpg");
+    img = loadImage("../client/js/p5js/assets/test.jpg");
   }
 
 function setup (){
     let canvas = createCanvas(WIDTH, HEIGHT);
     canvas.parent(mainContainer);
-    background(0);
-    rectMode(CENTER);
-    image(img, 0, 0, 400, 400)
+    
+    // slider
+    tintSliderR = createSlider(0, 255, 100);
+    tintSliderR.position(30, HEIGHT-50);
+    tintSliderR.style("width", "200px")
+    tintSliderG = createSlider(0, 255, 100);
+    tintSliderG.position(30, HEIGHT-100);
+    tintSliderG.style("width", "200px")
+    tintSliderB = createSlider(0, 255, 100);
+    tintSliderB.position(30, HEIGHT-150);
+    tintSliderB.style("width", "200px")
+    // rectMode(CENTER);
+    
 }
 
 function draw(){
-    
+    background(0);
+    // 01 Ex tint
+    let tintVR = tintSliderR.value();
+    let tintVG = tintSliderG.value();
+    let tintVB = tintSliderB.value();
+    tint(tintVR, tintVG,tintVB);
+    image(img,WIDTH/2 - (imgWdith/2), HEIGHT/2 - (imgHeight/2), imgWdith, imgHeight)
    
-    // rect(width/2, height/2, 100, 100)
+    
 }
 
 function windowResized(){
