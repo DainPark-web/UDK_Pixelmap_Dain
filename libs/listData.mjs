@@ -5,6 +5,6 @@ export const pathListData = [
     },
     {
         title: "Experiment02",
-        path : "/pages/test.html"
+        path : "/pages/experiment02.html"
     },
 ]
