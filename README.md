@@ -19,3 +19,4 @@
 - [loadPixels](https://p5js.org/reference/#/p5/loadPixels)
 - get, set, updatePixels, pixelDensity
 - loadPixels => set => updatePixels => image
+- => iconizität?
