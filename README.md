@@ -1,6 +1,6 @@
 # Pixelmap_Infoklasse
 
-[infoklasse](https://github.com/infoklasse/introduction)
+[infoklasse](https://github.com/infoklasse/image-analysis)
 
 ## index
 - [01.Tint](#01-tint)
