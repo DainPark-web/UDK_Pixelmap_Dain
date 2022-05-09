@@ -35,12 +35,24 @@ function draw(){
     for(let i = 0; i < 500; i++){
         let x = random(width);
         let y = random(height);
-        let iv = img.get(x, y);
+        let cCol = img.get(x, y);
+        const getRed = red(cCol);
+        let tCol;
+            if(getRed > 200){
+                tCol = [0, 109, 119, 255];
+            }else if(getRed > 100){
+                tCol = [131, 197, 190, 255];
+            }else if(getRed > 50){
+                tCol = [237, 246, 249, 255];
+            }
+            else{
+                tCol = [0, 0, 0, 255];
+            }
 
        
         noStroke();
-        fill(iv);
-        ellipse((x + WIDTH/4) + sin(t * (i * 0.001)) * 100 , y, 10, 10)
+        fill(tCol);
+        ellipse((x + WIDTH/4) , y, 10, 10)
     }
     
 }
