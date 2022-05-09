@@ -13,6 +13,7 @@ function setup (){
 function draw(){
     background(0);
     rect(width/2, height/2, 30, 30)
+  
 }
 
 function windowResized(){
@@ -20,3 +21,6 @@ function windowResized(){
     HEIGHT = mainContainer.clientHeight;
     resizeCanvas(WIDTH, HEIGHT);
 }
+
+//push
+//array
