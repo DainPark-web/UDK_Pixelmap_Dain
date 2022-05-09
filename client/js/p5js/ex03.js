@@ -25,7 +25,7 @@ function setup (){
             const getRed = red(cCol);
             let tCol;
             if(getRed > 150){
-                tCol = [0, 0, 255, 255];
+                tCol = [0, 100, 255, 255];
             }else{
                 tCol = [255, 0, 0, 255];
             }
