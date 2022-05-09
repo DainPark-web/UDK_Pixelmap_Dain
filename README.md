@@ -1,16 +1,10 @@
 # Pixelmap_Infoklasse
 
 
+## index
+- [01.Tint](#01)
+
+### 01 Tint
+- Ein Experiment mit Tint
 
 
-### 01
-- if
-- for
-- noStroke
-- frameRate
-
-
-### 02
-- blend
-- filter
-- push, pop
