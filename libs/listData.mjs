@@ -7,4 +7,8 @@ export const pathListData = [
         title: "Experiment02",
         path : "/pages/experiment02.html"
     },
+    {
+        title: "Experiment03",
+        path : "/pages/experiment03.html"
+    },
 ]
