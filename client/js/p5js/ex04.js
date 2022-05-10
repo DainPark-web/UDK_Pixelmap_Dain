@@ -11,6 +11,8 @@ let imgH = 500;
 let ball;
 let balls = []
 
+let ballCount = 100;
+
 function preload(){
     img = loadImage("../client/js/p5js/assets/test.jpg")
 }
@@ -19,13 +21,11 @@ function setup (){
     let canvas = createCanvas(WIDTH, HEIGHT);
     canvas.parent(mainContainer);
 
-    for(let i = 0; i < 100; i++){
+    for(let i = 0; i < ballCount; i++){
         const randomW = random(imgW);
         const h = HEIGHT/2 - (imgH/2);
         balls.push(new Ball(randomW, h, WIDTH/2 - (imgW/2), imgW, HEIGHT/2 - (imgH/2), imgH))
     }
-
-   
 
     background(0);
     // img.loadPixels();

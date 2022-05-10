@@ -6,6 +6,9 @@ class Ball{
         this.wL = imgW;
         this.hStartPoint = hsp;
         this.hL = imgH;
+        this.sy = random(1, 4)
+        this.acc = random(0.1, 0.4);
+
     }
 
     draw(){
@@ -14,9 +17,12 @@ class Ball{
     }
 
     move(){
-        this.y += 1;
+        this.sy += this.acc;
+        this.y += this.sy;
+
         if(this.y > this.hStartPoint + this.hL){
             this.y = this.hStartPoint;
+            this.sy = random(1, 4);
         }
     
     }
