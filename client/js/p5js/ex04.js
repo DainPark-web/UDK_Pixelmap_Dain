@@ -33,7 +33,7 @@ function setup (){
 
 function draw(){
     background(0,0,0,10);
-    translate(800 / 2, 0)
+    translate(WIDTH/4, 0)
     for(let i = 0; i < balls.length; i++){
         
         balls[i].draw();
