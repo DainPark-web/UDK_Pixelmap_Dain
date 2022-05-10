@@ -5,7 +5,7 @@ let WIDTH = mainContainer.clientWidth;
 let HEIGHT = mainContainer.clientHeight;
 
 let img;
-let imgW = 1200;
+let imgW = 900;
 let imgH = 800;
 
 let ball;
@@ -32,7 +32,7 @@ function setup (){
 
 
 function draw(){
-    background(0);
+    background(0,0,0,10);
     translate(800 / 2, 0)
     for(let i = 0; i < balls.length; i++){
         
