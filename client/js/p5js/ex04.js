@@ -11,7 +11,7 @@ let imgH = 500;
 let ball;
 let balls = []
 
-let ballCount = 300;
+let ballCount = 800;
 
 function preload(){
     img = loadImage("../client/js/p5js/assets/test.jpg")
@@ -24,7 +24,7 @@ function setup (){
     for(let i = 0; i < ballCount; i++){
         const randomW = random(imgW);
         const h = HEIGHT/2 - (imgH/2);
-        balls.push(new Ball(randomW, h, WIDTH/2 - (imgW/2), imgW, HEIGHT/2 - (imgH/2), imgH))
+        balls.push(new Ball(randomW, h, WIDTH/2 - (imgW/2), imgW, HEIGHT/2 - (imgH/2), imgH, img))
     }
 
     background(0);
@@ -53,6 +53,7 @@ function setup (){
 function draw(){
     background(0);
     for(let i = 0; i < balls.length; i++){
+        
         balls[i].draw();
         balls[i].move();
 
