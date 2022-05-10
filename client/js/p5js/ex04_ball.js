@@ -1,6 +1,6 @@
 class Ball{
     constructor(x, y, wsp, imgW, hsp, imgH){
-        this.x = x;
+        this.x = x + wsp;
         this.y = y;
         this.wStartPoint = wsp;
         this.wL = imgW;
