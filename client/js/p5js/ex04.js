@@ -44,7 +44,9 @@ function setup (){
 
 
 function draw(){
+    background(0);
     ball.draw()
+    ball.move()
 
     
 }

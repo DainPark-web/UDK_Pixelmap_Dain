@@ -9,8 +9,16 @@ class Ball{
     }
 
     draw(){
-        fill(2555)
+        fill(255)
         ellipse(this.x, this.y, 10, 10);
+    }
+
+    move(){
+        this.y += 1;
+        if(this.y > this.hStartPoint + this.hL){
+            this.y = this.hStartPoint;
+        }
+    
     }
 
 
