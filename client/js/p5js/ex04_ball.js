@@ -31,13 +31,13 @@ class Ball{
         // 01 Experiment
         const getR = red(getC);
         if(getR > 200){
-            this.col = [100,200,0,255]
+            this.col = [30,30,30,255]
         }else if(getR > 150){
-            this.col = [200,0,0,255]
+            this.col = [200,200,200,255]
         }else if(getR > 100){
-            this.col = [0,0,255,255]
+            this.col = [100,100,255,255]
         }else{
-            this.col = [0,100,255,255]
+            this.col = [0,0,255,255]
         }
         
         // 02 Experiment

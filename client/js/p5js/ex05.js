@@ -8,7 +8,7 @@ let img;
 let imgW = 800;
 let imgH = 800;
 
-let mod = 2000;
+let mod = 1500;
 
 function preload(){
     img = loadImage("../client/js/p5js/assets/test.jpg")
@@ -23,7 +23,7 @@ function setup (){
     img.loadPixels() ;
     for(let i =0; i < img.width ; i++ ){
         for(let j = 0; j < img.height; j++){
-            let cCol = img.get(int((mod % (abs(i - img.width/2) - img.width/2)) + 100), int(mod % (abs((j - img.height/2)))));
+            let cCol = img.get(int((mod % (abs(i - img.width/2) - img.width/2)) + 100), int(mod % (abs((j - img.height/2))- img.height/2)));
             
             const getRed = red(cCol);
             let tCol;
