@@ -17,7 +17,7 @@ class Ball{
     draw(){
         // noStroke()
         fill(this.col)
-        rect(this.x, this.y, 10, 10);
+        rect(this.x, this.y, 7, 7);
     }
 
     move(){
