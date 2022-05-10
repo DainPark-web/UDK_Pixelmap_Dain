@@ -11,7 +11,7 @@ let imgH = 500;
 let ball;
 let balls = []
 
-let ballCount = 100;
+let ballCount = 300;
 
 function preload(){
     img = loadImage("../client/js/p5js/assets/test.jpg")
