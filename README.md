@@ -23,3 +23,7 @@
 - image.updatePixels
 - iconizität?
 - [buffer](https://appdividend.com/2019/03/26/javascript-arraybuffer-example-arraybuffer-object-tutorial/)
+
+
+### 02_Array
+- push
