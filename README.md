@@ -30,3 +30,4 @@
 - createButton
 - save Image
 - .mousePressed(function)
+- .save("name", "file") ex) ("dain", "png")
