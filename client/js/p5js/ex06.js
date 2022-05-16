@@ -18,6 +18,7 @@ function setup (){
     // 
     fill(255)
     background(0);
+    textSize(12);
     // img.loadPixels();
     for(let i =0; i < img.width; i++ ){
         for(let j = 0; j < img.height; j++){
@@ -27,12 +28,12 @@ function setup (){
             if(getRed > 150){
                 tCol = [0, 100, 255, 255];
                 // fill(tCol)
-                textSize(12);
+               
                 text("Cola", i, j)
             }else{
                 tCol = [255, 0, 0, 255];
                 // fill(tCol)
-                textSize(32);
+                // textSize(32);
                 text("Coca", i, j)
             }
 
