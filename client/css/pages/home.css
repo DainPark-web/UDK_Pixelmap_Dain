@@ -56,6 +56,11 @@
   
 }
 
+
+.listUl > li > a > span{
+    color: var(--text-a-color);
+}
+
 .black_screen {
     position:absolute;
     top: 0;
