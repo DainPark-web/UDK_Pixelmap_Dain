@@ -36,14 +36,36 @@
     list-style: none;
     margin-bottom: 10px;
     background-color: antiquewhite;
-    aspect-ratio: 1/1;
+    aspect-ratio: 2/1;
+    display: flex;
 }
 
 .listUl > li > a {
     text-decoration: none;
     color: var(--text-a-color);
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+  
+}
+
+.black_screen {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
 
 }
-.listUl > li > a:hover{
-    opacity: 0.5;
+.listUl > li > a:hover .black_screen{
+    opacity: 0;
 }
