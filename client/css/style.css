@@ -1,5 +1,13 @@
 
+/* assets */
 @import "./assets/_color.css";
+
+
+/* components */
+@import "./components/text.css";
+
+
+/* pages */
 @import "./pages/home.css";
 
 
