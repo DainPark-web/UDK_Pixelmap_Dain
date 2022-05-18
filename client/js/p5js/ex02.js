@@ -1,5 +1,3 @@
-// Tint
-
 const mainContainer = document.querySelector(".p5container")
 
 let WIDTH = mainContainer.clientWidth;
