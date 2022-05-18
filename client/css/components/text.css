@@ -1,0 +1,15 @@
+.text_infoWrapper{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+
+.text_explainWrapper{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    color: red;
+    background-color: blue;
+}
