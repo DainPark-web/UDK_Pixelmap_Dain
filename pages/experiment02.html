@@ -9,15 +9,125 @@
     <link rel="stylesheet"
     href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
   
-    <title>EX01</title>
+    <title>EX02</title>
 </head>
 <body>
     <div class="text_infoWrapper">
-        <div class="text_title">Pixel Experiment 01</div>
+        <div class="text_title">Pixel Experiment 02</div>
         <div>18.05.2022</div>
     </div>
     <div class="p5container"></div>
+    <div class="text_explainWrapper">
+        <pre>
+        <code class="javascript-plaintext">
+            const mainContainer = document.querySelector(".p5container")
+            let WIDTH = mainContainer.clientWidth;
+            let HEIGHT = mainContainer.clientHeight;
 
+            let img;
+            let imgW = 800;
+            let imgH = 800;
+
+            function preload(){
+                img = loadImage("../client/js/p5js/assets/test.jpg")
+            }
+
+            function setup (){
+                let canvas = createCanvas(WIDTH, HEIGHT);
+                canvas.parent(mainContainer);
+            
+            
+                background(0);
+                img.loadPixels();
+                for(let i =0; i < img.width; i++ ){
+                    for(let j = 0; j < img.height; j++){
+                        const cCol = img.get(i, j);
+                        const getRed = red(cCol);
+                        let tCol;
+                        if(getRed > 150){
+                            tCol = [0, 100, 255, 255];
+                        }else{
+                            tCol = [255, 0, 0, 255];
+                        }
+                    
+                        img.set(i, j, tCol)
+                    }
+                }
+            
+                img.updatePixels();
+                image(img, WIDTH/2 - (imgW/2), HEIGHT/2 - (imgH/2), imgW, imgH)
+            
+            }
+
+
+            function draw(){
+
+            }
+
+            function windowResized(){
+                WIDTH = mainContainer.clientWidth;
+                HEIGHT = mainContainer.clientHeight;
+                resizeCanvas(WIDTH, HEIGHT);
+            }
+        </code>
+        </pre>
+        <div>Zuerst durch For Loop habe ich vorbereitet, um jede Pixel von Image zu handeln </div>
+        <pre>
+            <code class="javascript-plaintext">
+                img.loadPixels();
+                for(let i =0; i < img.width; i++ ){
+                    for(let j = 0; j < img.height; j++){
+                        ...
+                    }
+                }
+            </code>
+        </pre>
+        <div>
+            Und danach habe ich die Farben von jeden Pixel durch get() bekommen und danach habe ich durch red() nur Rotefarbedatei bekommen.
+        </div>
+        <pre>
+            <code class="javascript-plaintext">
+                img.loadPixels();
+                for(let i =0; i < img.width; i++ ){
+                    for(let j = 0; j < img.height; j++){
+                        const cCol = img.get(i, j);
+                    }
+                }
+            </code>
+        </pre>
+        <div>
+            Damit habe ich neues Farben definiert. Am Ende habe ich damit zum img benutzt und durch updatePixels() update gemacht
+        </div>
+        <pre>
+            <code class="javascript-plaintext">
+                img.loadPixels();
+                for(let i =0; i < img.width; i++ ){
+                    for(let j = 0; j < img.height; j++){
+                        const cCol = img.get(i, j);
+                        let tCol;
+                        if(getRed > 150){
+                            tCol = [0, 100, 255, 255];
+                        }else{
+                            tCol = [255, 0, 0, 255];
+                        }
+                        img.set(i, j, tCol)
+                    }
+                }
+                img.updatePixels();
+                image(img, WIDTH/2 - (imgW/2), HEIGHT/2 - (imgH/2), imgW, imgH)
+            </code>
+        </pre>
+        <div class="text_refContainer">
+            <div>Reference</div>
+            <div class="text_refWrapper">
+                <a class="text-ref" href="https://p5js.org/reference/#/p5/get" target="_blank">.get()</a>
+                <a class="text-ref" href="https://p5js.org/reference/#/p5/loadImage" target="_blank">loadImage</a>
+                <a class="text-ref" href="https://p5js.org/reference/#/p5/red" target="_blank">red()</a>
+                <a class="text-ref" href="https://p5js.org/reference/#/p5.Image/loadPixels" target="_blank">loadPixels()</a>
+                <a class="text-ref" href="https://p5js.org/reference/#/p5.Image/updatePixels" target="_blank">updatePixels()</a>
+            </div>
+        </div>
+    </div>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js" integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js" integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../client/js/p5js/ex03.js"></script>

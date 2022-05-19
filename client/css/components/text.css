@@ -25,3 +25,18 @@
     flex-direction: column;
     gap:20px;
 }
+
+.text-ref{
+    color: orange;
+    font-weight: 600;
+    font-size: 16px;
+}
+.text_refContainer{
+    margin-top: 30px;;
+}
+.text_refWrapper{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
