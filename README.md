@@ -8,15 +8,16 @@
 - [ ] hosting(with image) und danach schicken => Robin
 
 ## index
-- [01.Tint](#01-tint)
-- [01.U_array](#01_U_Array)
+- [01.Tint](#01_Tint)
+- [02.U_array](#02_U_Array)
+- [03.U_array](#03_Operator)
 
 
-### 01 Tint
+### 01_Tint
 - Ein Experiment mit Tint
 
 
-### 01_U_Array
+### 02_U_Array
 - [loadPixels](https://p5js.org/reference/#/p5/loadPixels)
 - get, set, updatePixels, pixelDensity
 - loadPixels => set => updatePixels => image
@@ -40,3 +41,23 @@
 
 ### 03_Operator
 [Operator_js_mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
+- größer als nächstes Y value
+- [lightness](https://p5js.org/reference/#/p5/lightness)
+```javascript
+    const color = image.get(x, y);
+    const color2 = image.get(x, y + 1);
+    let newColor;
+
+    if(lightness(color) > lightness(color2)){
+        newColor= [0,0,0,0]
+    }else{
+        newColor = [255,255,255,255]
+    }
+    image.set(x, y, newColor)
+```
+<br />
+- die Unterschied
+```javascript
+++i und i++
+!== und ==!
+```
