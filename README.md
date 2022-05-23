@@ -2,12 +2,12 @@
 [infoklasse](https://github.com/infoklasse/image-analysis)
 
 
-### note
+## Note(ToDo List)
 - [ ] mobile design
 - [ ] checken Deutsch 
 - [ ] hosting(with image) und danach schicken => Robin
 
-## index
+## Index
 - [01.Tint](#01_Tint)
 - [02.U_array](#02_U_Array)
 - [03.U_array](#03_Operator)
