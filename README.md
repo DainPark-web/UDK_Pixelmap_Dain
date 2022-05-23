@@ -40,6 +40,7 @@
 
 
 ## 03_Operator
+[Robin_Code](https://github.com/infoklasse/pixelmaps-pixeldata)
 [Operator_js_mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
 - größer als nächstes Y value
 - [lightness](https://p5js.org/reference/#/p5/lightness)
@@ -56,22 +57,49 @@
     image.set(x, y, newColor)
 ```
 <br />
+
 - die Unterschied
+
 ```javascript
 ++i und i++
 !== und ==!
 ```
+
 <br>
+
 <strong>pixelSize</strong>
 
 - 08_reduce folder
-- img.resize()
+- [img.resize()](https://p5js.org/reference/#/p5.Image/resize)
+- stroke
+- shapes
+- farben
+
 ```javascript
 let pixelSize = 10;
-for(let i =0; i < img.width; i += pixelSize){
+for(let i = 0; i < img.width; i += pixelSize){
     for(let j = 0; j < img.height; j += pixelSize){
         fill(img.get(i, j))
         rect(i, j, pixelSize, pixelSize)
     }
 }
 ```
+💡mit Mod experimentieren
+💡dist, class, mousePos, map, [lerp](https://p5js.org/reference/#/p5.Vector/lerp)
+
+
+```javascript
+const dot_size = (lightness(in_color) / 255) * 40
+```
+
+
+```javascipt
+x * CanvasSize / image.width + CanvasSize / image.width * 0.5
+```
+- durch Farben entschieden die Größe von Circle
+
+
+🐲 Aufgabe
+
+- +=, == experiment
+- <= experiment
