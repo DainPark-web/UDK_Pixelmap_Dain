@@ -99,7 +99,7 @@ x * CanvasSize / image.width + CanvasSize / image.width * 0.5
 - durch Farben entschieden die Größe von Circle
 
 
-🐲 Aufgabe
+🐲 <strong>Aufgabe</strong>
 
 - +=, == experiment
 - <= experiment
