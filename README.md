@@ -13,11 +13,11 @@
 - [03.U_array](#03_Operator)
 
 
-### 01_Tint
+## 01_Tint
 - Ein Experiment mit Tint
 
 
-### 02_U_Array
+## 02_U_Array
 - [loadPixels](https://p5js.org/reference/#/p5/loadPixels)
 - get, set, updatePixels, pixelDensity
 - loadPixels => set => updatePixels => image
@@ -30,7 +30,7 @@
 - [buffer](https://appdividend.com/2019/03/26/javascript-arraybuffer-example-arraybuffer-object-tutorial/)
 
 
-### 02_Array
+## 02_Array
 - push
 - createButton
 - save Image
@@ -39,7 +39,7 @@
 07image)analyse
 
 
-### 03_Operator
+## 03_Operator
 [Operator_js_mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
 - größer als nächstes Y value
 - [lightness](https://p5js.org/reference/#/p5/lightness)
@@ -60,4 +60,18 @@
 ```javascript
 ++i und i++
 !== und ==!
+```
+<br>
+<strong>pixelSize</strong>
+
+- 08_reduce folder
+- img.resize()
+```javascript
+let pixelSize = 10;
+for(let i =0; i < img.width; i += pixelSize){
+    for(let j = 0; j < img.height; j += pixelSize){
+        fill(img.get(i, j))
+        rect(i, j, pixelSize, pixelSize)
+    }
+}
 ```
