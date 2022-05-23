@@ -7,7 +7,6 @@ let HEIGHT = mainContainer.clientHeight;
 let img;
 let imgW = 800;
 let imgH = 800;
-
 let mod = 1500;
 
 function preload(){

@@ -36,3 +36,7 @@
 - .mousePressed(function)
 - .save("name", "file") ex) ("dain", "png")
 07image)analyse
+
+
+### 03_Operator
+[Operator_js_mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
