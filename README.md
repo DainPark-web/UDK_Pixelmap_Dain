@@ -1,6 +1,11 @@
 # Pixelmap_Infoklasse
-
 [infoklasse](https://github.com/infoklasse/image-analysis)
+
+
+### note
+- [ ] mobile design
+- [ ] checken Deutsch 
+- [ ] hosting(with image) und danach schicken => Robin
 
 ## index
 - [01.Tint](#01-tint)
@@ -9,7 +14,6 @@
 
 ### 01 Tint
 - Ein Experiment mit Tint
-
 
 
 ### 01_U_Array
