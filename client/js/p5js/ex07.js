@@ -16,19 +16,26 @@ function preload(){
 function setup (){
     let canvas = createCanvas(WIDTH, HEIGHT);
     canvas.parent(mainContainer);
+    noStroke()
 
   
     background(0);
-    let pixelSize = 20
+    let pixelSize = 10
     push()
-    translate(imgW/2, 0)
-    for(let i =0; i < img.width; i += pixelSize ){
-        for(let j = 0; j < img.height; j += pixelSize){
-         const pC = img.get(i, j);
-        fill(pC)
-         rect(i, j, pixelSize);
+        translate(imgW/2, 0)
+        for(let i =0; i < img.width; i += pixelSize ){
+            for(let j = 0; j < img.height; j += pixelSize){
+                const pC = img.get(i, j);
+                if(lightness(pC) > 50){
+
+                    fill(255)
+                    rect(i, j, pixelSize,  pixelSize);
+                }else{
+                    fill(0)
+                    ellipse(i, j, pixelSize,  pixelSize);
+                }
+            }
         }
-    }
     pop()
 
 
