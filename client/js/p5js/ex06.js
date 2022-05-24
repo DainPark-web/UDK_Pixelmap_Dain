@@ -42,8 +42,19 @@ function setup (){
             // }
 
             // 03
-            if(lightness(cCol) !== lightness(nCol)){
-                rCol = [255,255, 255, 255]
+            // if(lightness(cCol) !== lightness(nCol)){
+            //     rCol = [255,255, 255, 255]
+            // }else{
+            //     rCol = [0,0,0, 255]
+            // }
+
+            // 04
+            if(lightness(cCol) <= lightness(nCol)){
+                if(i % 3 === 0 || j % 3 === 0){
+                    rCol = [0,100, 255, 255]
+                }else{
+                    rCol = [255,255, 255, 255]    
+                }
             }else{
                 rCol = [0,0,0, 255]
             }
