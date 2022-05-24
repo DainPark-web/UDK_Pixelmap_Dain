@@ -47,7 +47,7 @@ function draw(){
                 }else{
                     if(dist(i, j, mouseX - width/4, mouseY) < 200){
 
-                        fill(0,200,0)
+                        fill(255,100,0)
                     }else{
 
                         fill(0)
