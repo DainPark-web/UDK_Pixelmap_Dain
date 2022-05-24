@@ -20,14 +20,30 @@ function setup (){
   
     background(0);
     img.loadPixels() ;
+  
     for(let i =0; i < img.width; i++ ){
         for(let j = 0; j < img.height; j++){
             let cCol = img.get(i, j);
             let nCol = img.get(i, j + 1);
             let rCol;
 
-            if(lightness(cCol) > lightness(nCol)){
-                rCol = [255,0,0, 255]
+            //01
+            // if(lightness(cCol) > lightness(nCol)){
+            //     rCol = [255,255, 255, 255]
+            // }else{
+            //     rCol = [0,0,0, 255]
+            // }
+
+            // 02
+            // if(lightness(cCol) === lightness(nCol)){
+            //     rCol = [255,255, 255, 255]
+            // }else{
+            //     rCol = [0,0,0, 255]
+            // }
+
+            // 03
+            if(lightness(cCol) !== lightness(nCol)){
+                rCol = [255,255, 255, 255]
             }else{
                 rCol = [0,0,0, 255]
             }
@@ -35,6 +51,7 @@ function setup (){
             img.set(i, j, rCol)
         }
     }
+    
 
     img.updatePixels();
     image(img, WIDTH/2 - (imgW/2), HEIGHT/2 - (imgH/2), imgW, imgH)
