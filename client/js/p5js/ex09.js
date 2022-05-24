@@ -17,7 +17,7 @@ function preload(){
 function setup (){
     let canvas = createCanvas(WIDTH, HEIGHT);
     canvas.parent(mainContainer);
-    strokeWeight(8)
+    strokeWeight(2)
 
   
     
@@ -31,7 +31,7 @@ function setup (){
 
 
 function draw(){
-    background(0);
+    background(0,0,0,5);
     push()
         translate(WIDTH/4, 0)
         noFill();
