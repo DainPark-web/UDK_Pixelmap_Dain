@@ -99,5 +99,7 @@
     .listUl{
         grid-template-columns: repeat(1, 1fr);
     }
-    
+    .listUl > li {
+        aspect-ratio: 1/1;
+    }
 }
