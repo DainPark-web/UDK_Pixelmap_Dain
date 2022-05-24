@@ -19,24 +19,7 @@ function setup (){
     noStroke()
 
   
-    background(0);
-    let pixelSize = 10
-    push()
-        translate(WIDTH/4, 0)
-        for(let i =0; i < img.width; i += pixelSize ){
-            for(let j = 0; j < img.height; j += pixelSize){
-                const pC = img.get(i, j);
-                if(lightness(pC) > 50){
-
-                    fill(255)
-                    rect(i, j, pixelSize,  pixelSize);
-                }else{
-                    fill(0)
-                    ellipse(i, j, pixelSize,  pixelSize);
-                }
-            }
-        }
-    pop()
+    
 
 
     // image(img, WIDTH/2 - (imgW/2), HEIGHT/2 - (imgH/2), imgW, imgH)
@@ -45,7 +28,35 @@ function setup (){
 
 
 function draw(){
-    
+    background(0);
+    let pixelSize = 30
+    push()
+        translate(WIDTH/4, 0)
+        for(let i =0; i < img.width; i += pixelSize ){
+            for(let j = 0; j < img.height; j += pixelSize){
+                const pC = img.get(i, j);
+                if(lightness(pC) > 50){
+                    if(dist(i, j, mouseX - width/4, mouseY) < 200){
+
+                        fill(255)
+                    }else{
+
+                        fill(100)
+                    }
+                    rect(i, j, pixelSize,  pixelSize);
+                }else{
+                    if(dist(i, j, mouseX - width/4, mouseY) < 200){
+
+                        fill(0,200,0)
+                    }else{
+
+                        fill(0)
+                    }
+                    ellipse(i, j, pixelSize,  pixelSize);
+                }
+            }
+        }
+    pop()
 }
 
 function windowResized(){
