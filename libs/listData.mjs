@@ -34,6 +34,11 @@ export const pathListData = [
         path : "/pages/experiment07.html",
         img: "../client/css/assets/fotos/04.png"
     },
+    {
+        title: "Experiment08",
+        path : "/pages/experiment08.html",
+        img: "../client/css/assets/fotos/04.png"
+    },
   
    
 ]
