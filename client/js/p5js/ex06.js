@@ -20,23 +20,19 @@ function setup (){
   
     background(0);
     img.loadPixels() ;
-    for(let i =0; i < img.width ; i++ ){
+    for(let i =0; i < img.width; i++ ){
         for(let j = 0; j < img.height; j++){
-            let cCol = img.get(int((mod % (abs(i - img.width/2) - img.width/2)) + 100), int(mod % (abs((j - img.height/2))- img.height/2)));
-            
-            const getRed = red(cCol);
-            let tCol;
-            if(getRed > 200){
-                tCol = [0, 0, 0, 255];
-            }else if(getRed > 100){
-                tCol = [255, 200, 0, 255];
-            }else if(getRed > 50){
-                tCol = [0, 200, 100, 255];
+            let cCol = img.get(i, j);
+            let nCol = img.get(i, j + 1);
+            let rCol;
+
+            if(lightness(cCol) > lightness(nCol)){
+                rCol = [255,0,0, 255]
             }else{
-                tCol = [255, 255, 255, 255];
+                rCol = [0,0,0, 255]
             }
-            // tCol = cCol;
-            img.set(i, j, tCol)
+           
+            img.set(i, j, rCol)
         }
     }
 
