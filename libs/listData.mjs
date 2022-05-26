@@ -27,17 +27,17 @@ export const pathListData = [
     {
         title: "Experiment06",
         path : "/pages/experiment06.html",
-        img: "../client/css/assets/fotos/04.png"
+        img: "../client/css/assets/fotos/06.png"
     },
     {
         title: "Experiment07",
         path : "/pages/experiment07.html",
-        img: "../client/css/assets/fotos/04.png"
+        img: "../client/css/assets/fotos/07.png"
     },
     {
         title: "Experiment08",
         path : "/pages/experiment08.html",
-        img: "../client/css/assets/fotos/04.png"
+        img: "../client/css/assets/fotos/08.png"
     },
   
    
