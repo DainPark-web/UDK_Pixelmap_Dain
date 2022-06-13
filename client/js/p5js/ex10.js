@@ -213,7 +213,7 @@ function draw(){
     }
 
     pop()
-    console.log(dataList[1].angle)
+    // console.log(dataList[1].angle)
 }
 
 function windowResized(){

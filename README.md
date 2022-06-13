@@ -103,3 +103,10 @@ x * CanvasSize / image.width + CanvasSize / image.width * 0.5
 
 - +=, == experiment
 - <= experiment
+
+
+
+### CSV
+[RobinCode](https://github.com/infoklasse/pixelmaps-pixeldata/tree/main/011_CMS)
+.getRowCount()
+.getString(row, column)
