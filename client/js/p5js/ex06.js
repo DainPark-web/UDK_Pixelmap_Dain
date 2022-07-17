@@ -10,7 +10,7 @@ let imgH = 800;
 let mod = 1500;
 
 function preload(){
-    img = loadImage("../client/js/p5js/assets/test.jpg")
+    img = loadImage("../client/js/p5js/assets/dog.jpg")
 }
 
 function setup (){
@@ -24,7 +24,7 @@ function setup (){
     for(let i =0; i < img.width; i++ ){
         for(let j = 0; j < img.height; j++){
             let cCol = img.get(i, j);
-            let nCol = img.get(i, j + 1);
+            let nCol = img.get(i, j + 10);
             let rCol;
 
             //01

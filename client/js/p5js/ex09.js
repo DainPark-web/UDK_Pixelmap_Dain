@@ -7,10 +7,10 @@ let HEIGHT = mainContainer.clientHeight;
 let img;
 let imgW = 800;
 let imgH = 800;
-let pixelSize = 30
+let pixelSize = 9
 
 function preload(){
-    img = loadImage("../client/js/p5js/assets/test.jpg")
+    img = loadImage("../client/js/p5js/assets/dog.jpg")
 }
 
 function setup (){
@@ -38,8 +38,8 @@ function draw(){
             for(let j = 0; j < img.height; j += pixelSize){
                 const pC = img.get(i, j);
                 push()
-                        if(lightness(pC) > 50 ){
-                            stroke(0, 0,200)
+                        if(lightness(pC) < 10 ){
+                            stroke(0, 0,0)
                             // line(i - pixelSize,j - pixelSize,i, j)
                             push()
                                 let a = atan2(mouseY - j, (mouseX - width/4) - i);
@@ -47,8 +47,41 @@ function draw(){
                                 rotate(a - 45)
                                 line(0,0,pixelSize, pixelSize)
                             pop();
-                        }else{
-                            stroke(255)
+                        }else if(lightness(pC) < 20 ){
+                            stroke(0,0,0)
+                            push()
+                                let a = atan2(mouseY - j, (mouseX - width/4) - i);
+                                translate(i, j)
+                                rotate(a - 45)
+                                line(0,0,pixelSize, pixelSize)
+                            pop();
+                        }else if(lightness(pC) < 30 ){
+                            stroke(200,0,0)
+                            push()
+                                let a = atan2(mouseY - j, (mouseX - width/4) - i);
+                                translate(i, j)
+                                rotate(a - 45)
+                                line(0,0,pixelSize, pixelSize)
+                            pop();
+                        }else if(lightness(pC) < 40 ){
+                            stroke(80,30,30)
+                            push()
+                                let a = atan2(mouseY - j, (mouseX - width/4) - i);
+                                translate(i, j)
+                                rotate(a - 45)
+                                line(0,0,pixelSize, pixelSize)
+                            pop();
+                        }else if(lightness(pC) < 50 ){
+                            stroke(100,0,0)
+                            push()
+                                let a = atan2(mouseY - j, (mouseX - width/4) - i);
+                                translate(i, j)
+                                rotate(a - 45)
+                                line(0,0,pixelSize, pixelSize)
+                            pop();
+                        }  
+                        else{
+                            stroke(0)
                             push()
                                 let a = atan2(mouseY - j, (mouseX - width/4) - i);
                                 translate(i, j)

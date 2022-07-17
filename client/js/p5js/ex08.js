@@ -8,10 +8,10 @@ let img;
 let imgW = 800;
 let imgH = 800;
 let mod = 1500;
-let pixelSize = 30
+let pixelSize = 10
 const distSize = 300
 function preload(){
-    img = loadImage("../client/js/p5js/assets/test.jpg")
+    img = loadImage("../client/js/p5js/assets/dog.jpg")
 }
 
 function setup (){
@@ -48,7 +48,7 @@ function draw(){
                 }else{
                     if(dist(i, j, mouseX - width/4, mouseY) < distSize){
 
-                        fill(255,100,0)
+                        fill(0,0,0)
                     }else{
 
                         fill(100)

@@ -39,16 +39,16 @@ export const pathListData = [
         path : "/pages/experiment08.html",
         img: "../client/css/assets/fotos/08.png"
     },
-    {
-        title: "Atan2-Pixel2",
-        path : "/pages/experiment09.html",
-        img: "../client/css/assets/fotos/08.png"
-    },
-    {
-        title: "CSV",
-        path : "/pages/experiment10.html",
-        img: "../client/css/assets/fotos/08.png"
-    },
+    // {
+    //     title: "Atan2-Pixel2",
+    //     path : "/pages/experiment09.html",
+    //     img: "../client/css/assets/fotos/08.png"
+    // },
+    // {
+    //     title: "CSV",
+    //     path : "/pages/experiment10.html",
+    //     img: "../client/css/assets/fotos/08.png"
+    // },
   
    
 ]

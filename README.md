@@ -98,7 +98,7 @@ x * CanvasSize / image.width + CanvasSize / image.width * 0.5
 ```
 - durch Farben entschieden die Größe von Circle
 
-
+    
 🐲 <strong>Aufgabe</strong>
 
 - +=, == experiment
@@ -114,3 +114,14 @@ x * CanvasSize / image.width + CanvasSize / image.width * 0.5
 .getString(row, column)
 
 - aufgabe => dokumentation weiter entwickeln.
+
+
+### jQuery
+[JqueryUI](https://jqueryui.com/)
+[Leaflet JS](https://leafletjs.com/)
+
+
+### overpass utrbo
+### EO Browser
+### Custom-Script 
+- 

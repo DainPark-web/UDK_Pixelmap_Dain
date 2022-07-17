@@ -10,7 +10,7 @@ let imgH = 800;
 let mod = 1500;
 
 function preload(){
-    img = loadImage("../client/js/p5js/assets/test.jpg")
+    img = loadImage("../client/js/p5js/assets/dog.jpg")
 }
 
 function setup (){
@@ -20,7 +20,7 @@ function setup (){
 
   
     background(0);
-    let pixelSize = 10
+    let pixelSize = 2
     push()
         translate(WIDTH/4, 0)
         for(let i =0; i < img.width; i += pixelSize ){
